@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head><title>Visitors Information</title></head>
+<body>
+  <h2>Visitors information</h2>
+  <hr>
+  <form action="#" method="post">
+    <table>
+      <tr><td>Email address:</td><td><input type="text" name="email"></td></tr>
+      <tr>
+        <td>Interest in web for:</td>
+        <td>
+          <input type="checkbox" name="research" value="research"> Research
+          <input type="checkbox" name="purchase" value="purchase"> Purchase
+        </td>
+      </tr>
+      <tr>
+        <td>Occupation:</td>
+        <td>
+          <select name="occupation">
+            <option>select one</option>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="business">Business</option>
+            <option value="other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Want us to send you junk emails?</td>
+        <td>
+          <input type="radio" name="junk" value="absolutely"> Absolutely
+          <input type="radio" name="junk" value="nowayman"> No way man
+        </td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>

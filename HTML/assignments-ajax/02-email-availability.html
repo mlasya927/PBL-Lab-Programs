@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AJAX Database Application - Email Availability</title>
+<style>
+  body { font-family: Arial; margin: 30px; }
+  input { padding: 8px; width: 250px; font-size: 14px; }
+  .msg { margin-top: 8px; font-weight: bold; }
+  .available { color: green; }
+  .not-available { color: red; }
+  .invalid { color: orange; }
+</style>
+</head>
+<body>
+
+  <h2>Check Email Availability (AJAX Demo)</h2>
+
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" onblur="checkAvailability()" placeholder="Enter email and click away">
+  <div class="msg" id="emailStatus"></div>
+
+  <p style="font-size:13px;color:#666;">
+    Try "test@xyz.com" (pre-seeded as already registered) to see "Not Available!"
+  </p>
+
+<script src="02-email-availability.js"></script>
+</body>
+</html>

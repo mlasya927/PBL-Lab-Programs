@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page - Frameset (Single File)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, sans-serif; }
+
+  .top-row { display: flex; height: 90px; }
+  .logo-frame {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .header-frame {
+    flex: 1;
+    background-color: #90EE90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .header-frame h1 { font-weight: bold; margin: 0; }
+
+  .middle-row { display: flex; min-height: 300px; }
+  .menu-frame {
+    width: 20%;
+    border-right: 1px solid #ccc;
+  }
+  .login-frame {
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .login-frame h2 { color: #0055A5; }
+  .login-frame table { margin: 20px auto; border-collapse: collapse; }
+  .login-frame td { padding: 8px; text-align: left; }
+  .login-frame input[type="text"],
+  .login-frame input[type="password"] {
+    background-color: #17c3c3;
+    border: none;
+    padding: 5px;
+  }
+  .login-frame input[type="submit"] {
+    background-color: #17c3c3;
+    border: none;
+    padding: 5px 15px;
+  }
+
+  .footer-frame {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  .footer-frame p { font-weight: bold; font-style: italic; margin: 0; }
+</style>
+</head>
+<body>
+
+  <div class="top-row">
+    <div class="logo-frame">
+      <svg width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="28" fill="#0074D9" />
+        <text x="30" y="38" font-size="24" fill="white" text-anchor="middle" font-family="Arial">L</text>
+      </svg>
+    </div>
+    <div class="header-frame">
+      <h1>Welcome to Login Page</h1>
+    </div>
+  </div>
+
+  <div class="middle-row">
+    <div class="menu-frame">&nbsp;</div>
+    <div class="login-frame">
+      <h2>Account Login</h2>
+      <form action="#" method="post">
+        <table>
+          <tr>
+            <td>User Name:</td>
+            <td><input type="text" name="username" maxlength="8"></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" maxlength="8"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Login"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-frame">
+    <p>Copyright &copy; 2014 Wipro Technologies. All rights reserved</p>
+  </div>
+
+</body>
+</html>

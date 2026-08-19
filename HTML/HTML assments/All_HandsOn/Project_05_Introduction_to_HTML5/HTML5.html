@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Attributes</title>
+<style>
+  .visitor-section, .registration-section { margin-bottom: 30px; }
+  table { border-collapse: collapse; }
+  td { padding: 6px; }
+  .registration-section { text-align: center; }
+  .registration-section table { margin: 0 auto; text-align: left; }
+</style>
+</head>
+<body>
+
+  <div class="visitor-section">
+    <h2>Visitors information</h2>
+    <hr>
+    <form action="#" method="post">
+      <table>
+        <tr><td>Email address:</td><td><input type="email" name="email" placeholder="you@example.com" required></td></tr>
+        <tr>
+          <td>Interest in web for:</td>
+          <td>
+            <input type="checkbox" name="research" value="research"> Research
+            <input type="checkbox" name="purchase" value="purchase"> Purchase
+          </td>
+        </tr>
+        <tr>
+          <td>Occupation:</td>
+          <td>
+            <select name="occupation" multiple>
+              <option value="student">Student</option>
+              <option value="employee">Employee</option>
+              <option value="business">Business</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Want us to send you junk emails?</td>
+          <td>
+            <input type="radio" name="junk" value="absolutely"> Absolutely
+            <input type="radio" name="junk" value="nowayman"> No way man
+          </td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+
+  <div class="registration-section">
+    <h2>Online Registration</h2>
+    <form action="#" method="post">
+      <table>
+        <tr><td>Username:</td><td><input type="text" name="username" placeholder="Enter username" required></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="password" placeholder="Enter password" required></td></tr>
+        <tr><td>Confirm Password:</td><td><input type="password" name="confirmpassword" placeholder="Re-enter password" required></td></tr>
+        <tr><td>Name:</td><td><input type="text" name="name" placeholder="Full name" required></td></tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+        <tr><td>Address:</td><td><textarea name="address" rows="4" cols="30" placeholder="Your address" required></textarea></td></tr>
+        <tr>
+          <td>Profession:</td>
+          <td>
+            <select name="profession" multiple>
+              <option value="engineer">Engineer</option>
+              <option value="doctor">Doctor</option>
+              <option value="teacher">Teacher</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td></td><td><input type="submit" value="Register"></td></tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+  body { text-align: center; }
+  table { margin: 0 auto; text-align: left; }
+</style>
+</head>
+<body>
+  <h2>Online Registration</h2>
+  <form action="#" method="post">
+    <table>
+      <tr><td>Username:</td><td><input type="text" name="username"></td></tr>
+      <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+      <tr><td>Confirm Password:</td><td><input type="password" name="confirmpassword"></td></tr>
+      <tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr><td>Address:</td><td><textarea name="address" rows="4" cols="30"></textarea></td></tr>
+      <tr>
+        <td>Profession:</td>
+        <td>
+          <select name="profession">
+            <option>select one</option>
+            <option value="engineer">Engineer</option>
+            <option value="doctor">Doctor</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td></td><td><input type="submit" value="Register"></td></tr>
+    </table>
+  </form>
+</body>
+</html>

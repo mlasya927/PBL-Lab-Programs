@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frames - Font and Alignment (Single File)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, sans-serif; }
+
+  .header-frame {
+    height: 30vh;
+    text-align: center;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-frame img { max-width: 100%; max-height: 100%; }
+
+  .bottom-row { display: flex; height: 70vh; }
+  .menu-frame {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+  }
+  .menu-frame a {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+  .content-frame {
+    width: 70%;
+    padding: 15px;
+  }
+  .content-frame > div { display: none; }
+  .content-frame > div.active { display: block; }
+</style>
+</head>
+<body>
+
+  <div class="header-frame">
+    <img src="https://via.placeholder.com/700x150?text=Header+Image" alt="Header">
+  </div>
+
+  <div class="bottom-row">
+    <div class="menu-frame">
+      <a onclick="showSection('font')">Font</a>
+      <a onclick="showSection('alignment')">Alignment</a>
+    </div>
+    <div class="content-frame">
+      <div id="blank" class="active">
+        <p>Select "Font" or "Alignment" from the left menu.</p>
+      </div>
+      <div id="font">
+        <p style="font-family: 'Agency FB', sans-serif;">Agency FB</p>
+        <p style="font-family: Cambria, serif;">Cambria</p>
+        <p style="font-family: 'Elephant', serif;">Elephant</p>
+        <p style="font-family: Georgia, serif;">Georgia</p>
+        <p style="font-family: 'Courier New', monospace;">Courier New</p>
+      </div>
+      <div id="alignment">
+        <p style="text-align:left;">This text is left aligned.</p>
+        <p style="text-align:center;">This text is center aligned.</p>
+        <p style="text-align:right;">This text is right aligned.</p>
+        <p style="text-align:justify;">This text is justify aligned. Justify aligning stretches the lines
+          so that each line has equal width, similar to how text is aligned in newspapers and magazines.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content-frame > div').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
